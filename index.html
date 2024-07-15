@@ -14,7 +14,9 @@
                        <h1></h1>
             </div>
             <div class="nav-mid">
-                     <ul>
+               
+    
+                     <ul >
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">ABOUT</a></li>
                         <li><a href="#">HOW IT'S WORKS</a></li>
@@ -23,6 +25,8 @@
 
                      </ul>
             </div>
+            <span class="menuBtn" onclick="openMenu()"> &#9776</span>
+            <span class="closeBtn" onclick="closeMenu()"> &#9746</span>
          
               <div class="nav-r"> 
                 <ul>
@@ -33,14 +37,50 @@
                    </ul>
               
               </div>
+
+              
         </nav>
+        <ul id="menu" >
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">HOW IT'S WORKS</a></li>
+           
+               <div class="login_menu"> 
+                <ul>
+                  
+               <a href="a/login-page.html">
+                <button id="login" onclick="login">LOGIN</button>
+               </a>
+                   </ul>
+              
+              </div>
+           
+
+         </ul>
+       
     </header>
     <section id="home">
 
 
     </section>
  
+   <script>
+    let x = document.getElementById('menu');
+let menuBtn = document.querySelector('.menuBtn');
+let closeBtn = document.querySelector('.closeBtn');
 
+function openMenu(){
+    
+    x.style.display = 'block';
+    menuBtn.style.display  = 'none';
+    closeBtn.style.display ='block';
+}
+function closeMenu(){
+    x.style.display ='none';
+    menuBtn.style.display = 'block';
+    closeBtn.style.display ='none';
+}
+   </script>
     <script src="script.js"></script>
       
   
