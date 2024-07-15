@@ -12,6 +12,7 @@
 }
 header{
     background-color: #001f3f;
+    
   
 }
 nav{
@@ -22,8 +23,15 @@ nav{
    align-items: center;
 }
 .nav-l{
-    width: 20%;
+    width: 30%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 1%;
     
+}
+.nav-l h1 {
+    margin-left: 26%;
 }
 .nav-mid{
     width: 40%;
