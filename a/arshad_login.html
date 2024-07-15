@@ -53,7 +53,7 @@
 
 <div class="form-container">
     <h2>Input the Book Details</h2>
-    <form action="your-form-action-url" method="post">
+    <form  method="post" name="google-sheet">
         <input type="text" placeholder="Book ID" name="bookID" required>
         <input type="text" placeholder="Book Name" name="bookName" required>
         <input type="text" placeholder="Author Name" name="authorName" required>
@@ -62,5 +62,18 @@
     </form>
 </div>
 
+
+   
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwrn4PXFFMLN3mn1wgZg1h6eCRZ-tQdooJgupkS52hxv_XLPSjqxDOXjb1ZUY4JEjrc/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Book detalis Successfully Saved ....."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
