@@ -8,7 +8,7 @@
     padding: 0px;
     margin: 0px;
     color: #fff; 
- 
+   font-style: italic;
 }
 header{
     background-color: #001f3f;
@@ -82,7 +82,7 @@ nav .nav-r button{
     color: black;
     height: 30px;
     width: 50px;
-    background-color: #0074D9;
+    background-color: #67a8e9;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -216,7 +216,7 @@ nav .nav-r button:hover{
     color: black;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: #67a8e9;
     margin-right: 100px;
     
 
@@ -238,4 +238,12 @@ nav .nav-r button:hover{
     height: 400px;
     width: 600px;
     border-radius: 5%;
+}
+.heading{
+    float: left;
+}
+#sec3{
+    height: 100%;
+    width: 100%;
+    background-color: #001f3f;
 }
