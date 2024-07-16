@@ -95,6 +95,40 @@ nav .nav-r button:hover{
 
 
 
+
+/* *********************************home ********************************************* */
+
+#home{
+    background-image: url(img/bg_home.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+    
+   
+ 
+
+}
+.auto_home{
+   padding: 200px 0px;
+   width: 70%;
+}
+  
+.auto-type  {
+    color: white ;
+    
+}
+.auto_home h1{
+    font-size: 4vw;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+
 /* --------------------------------------- media@ + menu --------------------------- */
 
 .closeBtn, .menuBtn {
@@ -125,6 +159,7 @@ nav .nav-r button:hover{
         float: right;
         line-height: 40px;
         list-style: none;
+        
     
        
         
@@ -160,6 +195,17 @@ nav .nav-r button:hover{
     .login_menu button:hover{
         background-color: #005BB5;
     }
+
+    /* ************************************* home media  */
+    
+    .auto_home h1{
+        font-size: 8vw;
+        font-weight: 900;
+        font-style: italic;
+    }
+    
     
   
 }
+
+

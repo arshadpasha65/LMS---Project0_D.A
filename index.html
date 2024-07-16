@@ -1,91 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>library management system</title>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="nav-l">
-                       <img src="img/library-logo-design-precious-astonishing-13.jpg" alt="">
-                       <h1>LMS</h1>
+                <img src="img/library-logo-design-precious-astonishing-13.jpg" alt="">
+                <h1>LMS</h1>
             </div>
             <div class="nav-mid">
-               
-    
-                     <ul >
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">HOW IT'S WORKS</a></li>
-                        
-                       
 
-                     </ul>
+
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">HOW IT'S WORKS</a></li>
+
+
+
+                </ul>
             </div>
             <span class="menuBtn" onclick="openMenu()"> &#9776</span>
             <span class="closeBtn" onclick="closeMenu()"> &#9746</span>
-         
-              <div class="nav-r"> 
+
+            <div class="nav-r">
                 <ul>
                     <!-- <li><a href="#">LOGIN</a></li> -->
-               <a href="a/login-page.html">
-                <button id="login" onclick="login">LOGIN</button>
-               </a>
-                   </ul>
-              
-              </div>
+                    <a href="a/login-page.html">
+                        <button id="login" onclick="login">LOGIN</button>
+                    </a>
+                </ul>
 
-              
+            </div>
+
+
         </nav>
         <!-- *************************************menu ********************* -->
-        <ul id="menu" >
+        <ul id="menu">
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">HOW IT'S WORKS</a></li>
-           
-               <div class="login_menu"> 
+
+            <div class="login_menu">
                 <ul>
-                  
-               <a href="a/login-page.html">
-                <button id="login" onclick="login">LOGIN</button>
-               </a>
-                   </ul>
-              
-              </div>
-           
 
-         </ul>
+                    <a href="a/login-page.html">
+                        <button id="login" onclick="login">LOGIN</button>
+                    </a>
+                </ul>
 
-         <!-- **********************************menu ************************* -->
-       
+            </div>
+
+
+        </ul>
+
+        <!-- **********************************menu ************************* -->
+
     </header>
     <section id="home">
 
+        <center>
+            <div class="auto_home">
+                <h1><span class="auto-type"> </span></h1>
+                
+
+            </div>
+        </center>
+
 
     </section>
- 
-   <script>
-    let x = document.getElementById('menu');
-let menuBtn = document.querySelector('.menuBtn');
-let closeBtn = document.querySelector('.closeBtn');
 
-function openMenu(){
-    
-    x.style.display = 'block';
-    menuBtn.style.display  = 'none';
-    closeBtn.style.display ='block';
-}
-function closeMenu(){
-    x.style.display ='none';
-    menuBtn.style.display = 'block';
-    closeBtn.style.display ='none';
-}
-   </script>
+    <script>
+        let x = document.getElementById('menu');
+        let menuBtn = document.querySelector('.menuBtn');
+        let closeBtn = document.querySelector('.closeBtn');
+
+        function openMenu() {
+
+            x.style.display = 'block';
+            menuBtn.style.display = 'none';
+            closeBtn.style.display = 'block';
+        }
+        function closeMenu() {
+            x.style.display = 'none';
+            menuBtn.style.display = 'block';
+            closeBtn.style.display = 'none';
+        }
+    </script>
     <script src="script.js"></script>
-      
-  
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="../unpkg.com/boxicons%402.1.4/dist/boxicons.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: [, "Welcome to Our Library Management System: Effortlessly Store Your Data in Excel and Directly in Google Sheets."],
+            typeSpeed:  90,
+            backSpeed: 0,
+            loop: true,
+        })
+    </script>
+
 </body>
+
 </html>
